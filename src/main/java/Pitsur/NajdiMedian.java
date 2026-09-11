@@ -20,5 +20,6 @@ public class NajdiMedian {
         int pocet = nactenaCisla.size();
         int median = nactenaCisla.get(pocet / 2);
         System.out.println(median);
+        System.out.println("Median je: " + median);
     }
 }
