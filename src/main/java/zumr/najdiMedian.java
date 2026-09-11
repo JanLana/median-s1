@@ -1,4 +1,4 @@
-package org.example.zumr;
+package zumr;
 
 import java.util.ArrayList;
 import java.util.List;
