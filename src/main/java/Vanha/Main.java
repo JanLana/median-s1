@@ -10,7 +10,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        List<Integer> arr = new ArrayList<Integer>();
+        List<Integer> arr = new ArrayList<>();
 
 
         int a = sc.nextInt();
