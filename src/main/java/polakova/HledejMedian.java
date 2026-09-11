@@ -10,6 +10,7 @@ public class HledejMedian {
 
         if (cisla <= 0) {
             return;
+
         }
 
 
