@@ -28,7 +28,7 @@ public class Main {
             System.out.println(arr.get(prostredniIndex));
         }
         else {
-            int cislo1 = arr.get(prostredniIndex - 1);
+            int cislo1 = arr.get(prostredniIndex + 1);
             int cislo2 = arr.get(prostredniIndex);
             int median = (cislo1 + cislo2) / 2;
             System.out.println(median);
