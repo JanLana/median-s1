@@ -28,8 +28,5 @@ public class najdiMedian {
             }
             System.out.println("Median je " + median);
 
-
-
-
     }
 }
