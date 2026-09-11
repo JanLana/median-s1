@@ -16,6 +16,6 @@ public class NaleznutiMedianu {
 
       int median = cisla.get(cisla.size() / 2);
 
-        System.out.println("Median je: " + median);
+        System.out.println("Medián je: " +  median);
     }
 }
