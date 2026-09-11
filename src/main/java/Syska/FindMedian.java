@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class FindMedian {
     static void main(){
         Scanner sc = new Scanner(System.in);
-        Integer input = 1;
-        List<Integer> arr = new ArrayList<Integer>();
+        int input;
+        List<Integer> arr = new ArrayList<>();
 
         while (true) {
             input = sc.nextInt();
@@ -21,13 +21,9 @@ public class FindMedian {
 
         }
 
-        for (int i = 0;i<arr.size();i++){
-            System.out.println(arr.get(i));
-        }
-
 
         Collections.sort(arr);
-        int x = -1;
+        int x;
 
         if (arr.size()%2 != 0){
             x = arr.get(arr.size() / 2);
