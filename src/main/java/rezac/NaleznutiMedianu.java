@@ -3,7 +3,6 @@ package rezac;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class NaleznutiMedianu {
      static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
