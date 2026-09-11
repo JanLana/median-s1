@@ -22,7 +22,17 @@ public class Main {
         Collections.sort(arr);
 
         int n = arr.size();
-        double median;
+        int prostredniIndex = n / 2;
+
+        if (n % 2 == 1) {
+            System.out.println(arr.get(prostredniIndex));
+        }
+        else {
+            int cislo1 = arr.get(prostredniIndex - 1);
+            int cislo2 = arr.get(prostredniIndex);
+            int median = (cislo1 + cislo2) / 2;
+            System.out.println(median);
+        }
 
     }
 }
