@@ -3,8 +3,9 @@ package rezac;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class NaleznutiMedianu {
-    public static void main(String[] args) {
+     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> cisla = new ArrayList<>();
 
@@ -14,8 +15,7 @@ public class NaleznutiMedianu {
             cisla.add(cislo);
         }
 
-      int median = cisla.get(cisla.size() / 2);
-
+        int median = cisla.get(cisla.size() / 2);
         System.out.println("Medián je: " +  median);
     }
 }
