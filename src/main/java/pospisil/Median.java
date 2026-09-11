@@ -37,7 +37,6 @@ public class Median {
 
             System.out.println(median);
         }
-
         sc.close();
     }
 }
