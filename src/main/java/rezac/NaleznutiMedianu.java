@@ -1,20 +1,28 @@
 package rezac;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class NaleznutiMedianu {
-     static void main(String[] args) {
+    static void main() {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Integer> cisla = new ArrayList<>();
-
+        ArrayList <Integer> cisla = new ArrayList<>();
         int cislo;
-
         while ((cislo = sc.nextInt()) != 0) {
             cisla.add(cislo);
         }
+        Collections.sort(cisla);
 
-        int median = cisla.get(cisla.size() / 2);
-        System.out.println("Medián je: " +  median);
+
+        int stred = cisla.size() / 2;
+        double median;
+        if (cisla.size() % 2 == 0) {
+            median = (cisla.get(stred - 1) + cisla.get(stred)) / 2.0;
+        } else {
+            median = cisla.get(stred);
+        }
+
+        System.out.println("Medián je: " + median);
     }
 }
