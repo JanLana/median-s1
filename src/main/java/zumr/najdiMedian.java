@@ -5,28 +5,24 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class najdiMedian {
-    static void main(){
+void main() {
+    Scanner sc = new Scanner(System.in);
+    List<Double> numbers = new ArrayList<>();
 
-        Scanner sc = new Scanner(System.in);
-        List<Integer> cisla = new ArrayList<>();
-            int a = sc.nextInt();
-
-            while(a!= 0){
-                cisla.add(a);
-                a= sc.nextInt();
-            }
-            Collections.sort(cisla);
-
-            double median;
-            int size = cisla.size();
-
-            if(size % 2 == 1){
-            median = cisla.get(size / 2);
-            }else{
-                median = (cisla.get((size / 2) - 1) + cisla.get(size / 2)) / 2.0;
-            }
-            System.out.println("Median je " + median);
-
+    while(true){
+        double a = sc.nextDouble();
+        if(a==0)break;
+        numbers.add(a);
     }
+    Collections.sort(numbers);
+
+    double median;
+
+    if(numbers.size()%2 ==1) {
+        median = numbers.get(numbers.size()/2);
+    }else {
+        int middle = numbers.size()/2 ;
+        median = (numbers.get(middle - 1) + numbers.get(middle)) / 2.0;
+    }
+    System.out.println(median);
 }
